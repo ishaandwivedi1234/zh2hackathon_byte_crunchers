@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:padding="12dp"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/box_shadow_round"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/group_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="12dp"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:text="College Group"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:fontFamily="@font/roboto"
+        android:drawableStart="@drawable/group_name_et_logo" />
+
+    <TextView
+        android:id="@+id/group_members"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="12dp"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:text="6 Active Members"
+        android:textSize="18sp"
+        android:fontFamily="@font/roboto"
+        android:drawableStart="@drawable/group_user_logo" />
+
+    <TextView
+        android:id="@+id/group_events"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="12dp"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:text="2 Running Events"
+        android:textSize="18sp"
+        android:fontFamily="@font/roboto"
+        android:drawableStart="@drawable/group_active_logo" />
+
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.EventCreationActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rl_header_box_shadow"
+            android:orientation="horizontal"
+            android:elevation="12dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_marginStart="8dp"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                app:tint="#474242"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_baseline_keyboard_backspace_24"/>
+
+            <TextView
+                android:id="@+id/group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Group Name"
+                android:textColor="#000000"
+                android:fontFamily="@font/roboto"
+                android:textSize="22sp"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/group_info_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event INFO"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto"
+            android:textSize="18sp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/relativeLayout" />
+
+        <EditText
+            android:id="@+id/et_event_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:elevation="12dp"
+            android:background="@drawable/box_shadow"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="12dp"
+            android:drawablePadding="12dp"
+            android:padding="8dp"
+            android:paddingStart="12dp"
+            android:inputType="textPersonName"
+            android:hint="Enter Event's Name"
+            android:textSize="20sp"
+            android:fontFamily="@font/roboto"
+            android:drawableStart="@drawable/event_name_logo"
+            app:layout_constraintTop_toBottomOf="@id/group_info_txt"/>
+
+        <EditText
+            android:id="@+id/et_event_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="60dp"
+            android:elevation="12dp"
+            android:background="@drawable/box_shadow"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:paddingStart="12dp"
+            android:drawablePadding="12dp"
+            android:inputType="number"
+            android:hint="Total Amount"
+            android:textSize="20sp"
+            android:fontFamily="@font/roboto"
+            android:drawableStart="@drawable/event_amount_logo"
+            app:layout_constraintTop_toBottomOf="@id/et_event_name"/>
+
+        <TextView
+            android:id="@+id/select_conti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Contributors (Enter 0 for no contribution from a user, but still present at the event.)"
+            android:textColor="#5E5A5A"
+            android:fontFamily="@font/roboto"
+            android:textSize="18sp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_event_amount" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/users_rec"
+            app:layout_constraintTop_toBottomOf="@id/select_conti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_margin="24dp"/>
+
+        <Button
+            android:id="@+id/btn_create_event"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Create Event"
+            android:textSize="19sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/roboto"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:backgroundTint="@color/blue"
+            android:textAllCaps="false"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/users_rec"
+            android:layout_marginTop="32dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/box_shadow_round"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/event_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:text="College Group"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:fontFamily="@font/roboto"/>
+
+    <TextView
+        android:id="@+id/event_members"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="4dp"
+        android:paddingStart="12dp"
+        android:text="6 members participated"
+        android:textColor="#575454"
+        android:textSize="20sp"
+        android:fontFamily="@font/roboto"/>
+
+    <TextView
+        android:id="@+id/event_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:text="Total: 5000/-"
+        android:textColor="#575454"
+        android:textSize="20sp"
+        android:fontFamily="@font/roboto"/>
+
+</LinearLayout>

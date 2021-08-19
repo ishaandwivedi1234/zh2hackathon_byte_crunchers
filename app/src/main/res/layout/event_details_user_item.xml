@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/box_shadow_round"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:text="College Group"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:drawablePadding="12dp"
+        android:drawableStart="@drawable/user_logo"
+        android:fontFamily="@font/roboto_bold"/>
+
+    <TextView
+        android:id="@+id/user_to_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="4dp"
+        android:paddingStart="12dp"
+        android:text="Need to pay Rs 300"
+        android:textColor="#D52762"
+        android:textSize="20sp"
+        android:fontFamily="@font/roboto_bold"/>
+
+</LinearLayout>

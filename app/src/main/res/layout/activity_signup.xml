@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99FAFAFA"
+    tools:context=".Activities.SignupActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/heading_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/login_heading_bg"
+            android:paddingBottom="26dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/text_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Welcome to Split Monk,"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:id="@+id/text_sub_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="Let's create your account with us.\n\nUse your email and payment info to create a new account for yourself."
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="6dp" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:inputType="textPersonName"
+            android:hint="Full Name"
+            android:textColor="#000000"
+            android:fontFamily="@font/roboto"
+            android:textSize="20sp"
+            android:textColorHint="#8F8D8D"
+            android:paddingStart="16dp"
+            android:drawableStart="@drawable/user_logo"
+            android:drawablePadding="16dp"
+            android:paddingEnd="16dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/et_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/heading_layout" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:textColor="#000000"
+            android:fontFamily="@font/roboto"
+            android:textSize="20sp"
+            android:textColorHint="#8F8D8D"
+            android:paddingStart="16dp"
+            android:drawableStart="@drawable/email_logo"
+            android:drawablePadding="16dp"
+            android:paddingEnd="16dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/et_login_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_name" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:textColor="#000000"
+            android:fontFamily="@font/roboto"
+            android:textSize="20sp"
+            android:textColorHint="#8F8D8D"
+            android:paddingStart="16dp"
+            android:drawableStart="@drawable/pass_logo"
+            android:drawablePadding="16dp"
+            android:paddingEnd="16dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/et_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_email" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_password_2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:inputType="textPassword"
+            android:hint="Confirm Password"
+            android:textColor="#000000"
+            android:fontFamily="@font/roboto"
+            android:textSize="20sp"
+            android:textColorHint="#8F8D8D"
+            android:paddingStart="16dp"
+            android:drawableStart="@drawable/pass_logo"
+            android:drawablePadding="16dp"
+            android:paddingEnd="16dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/et_login_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_password" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_upi"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:inputType="text"
+            android:hint="Enter UPI ID"
+            android:textColor="#000000"
+            android:fontFamily="@font/roboto"
+            android:textSize="20sp"
+            android:textColorHint="#8F8D8D"
+            android:paddingStart="16dp"
+            android:drawableStart="@drawable/upi_logo"
+            android:drawablePadding="16dp"
+            android:paddingEnd="16dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/et_signup"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_password_2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/login_button"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_upi"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/sign_up_button"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="#656565"
+            android:textSize="22sp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_signup"/>
+
+        <TextView
+            android:id="@+id/txt_terms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text="By signing up, you agree to its terms &amp; conditions"
+            android:textColor="#656565"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_login" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
