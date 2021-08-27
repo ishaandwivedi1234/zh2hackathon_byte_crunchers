@@ -11,7 +11,7 @@ college friends .
 ● Also, the application provides pay feature, so that after the report is generated they can transfer the money using UPI in just one click .
 
 ## Auth - Flow 
-<img src="https://github.com/ishaandwivedi1234/split-monk/blob/master/images/a.png"/>
+<img src="https://github.com/lucifer0987/zh2hackathon_byte_crunchers/blob/main/Images/a.png"/>
 
 ## Groups & Events Flow 
-<img src="https://github.com/ishaandwivedi1234/split-monk/blob/master/images/b.png"/>
+<img src="https://github.com/lucifer0987/zh2hackathon_byte_crunchers/blob/main/Images/b.png"/>
