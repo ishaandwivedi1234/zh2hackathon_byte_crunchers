@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -36,7 +37,8 @@ import io.paperdb.Paper;
 
 public class DashboardActivity extends AppCompatActivity {
 
-    ImageView profile, no_group_img;
+    ImageView no_group_img;
+    Button profile;
     TextView no_group_txt;
     GroupAdapter adapter;
     RecyclerView group_rec;
@@ -74,7 +76,6 @@ public class DashboardActivity extends AppCompatActivity {
                 RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
                 group_rec.setLayoutManager(layoutManager);
                 group_rec.setAdapter(adapter);
-                group_rec.setHasFixedSize(true);
 
                 loadUserData();
             }

@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.ClipData;
+import android.content.ClipboardManager;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -36,7 +39,7 @@ import io.paperdb.Paper;
 
 public class GroupDashboardActivity extends AppCompatActivity {
 
-    ImageView back_button;
+    ImageView back_button, btn_group_info;
     FirebaseAuth mAuth;
     FirebaseUser currUser;
     FloatingActionButton add_event;
@@ -44,6 +47,7 @@ public class GroupDashboardActivity extends AppCompatActivity {
     EventAdapter adapter;
     String group_id_txt;
     TextView groupname;
+    Group curr;
     ArrayList<Event> all_events = new ArrayList<>();
 
     @Override
@@ -89,6 +93,16 @@ public class GroupDashboardActivity extends AppCompatActivity {
             }
         });
 
+        btn_group_info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+                ClipData clip = ClipData.newPlainText("group_id", curr.getGroup_id());
+                clipboard.setPrimaryClip(clip);
+                Toast.makeText(GroupDashboardActivity.this, "Group ID has been copied to your clipboard", Toast.LENGTH_SHORT).show();
+            }
+        });
+
     }
 
     private void loadGroupData() {
@@ -97,7 +111,7 @@ public class GroupDashboardActivity extends AppCompatActivity {
         ref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
-                Group curr = snapshot.getValue(Group.class);
+                curr = snapshot.getValue(Group.class);
                 groupname.setText(curr.getGroup_name());
                 loadEventData(curr);
             }
@@ -148,6 +162,7 @@ public class GroupDashboardActivity extends AppCompatActivity {
         add_event = findViewById(R.id.add_event);
         groupname = findViewById(R.id.group_name);
         event_rec = findViewById(R.id.events_rec);
+        btn_group_info = findViewById(R.id.btn_group_info);
     }
 
 }

@@ -126,7 +126,7 @@ public class EventCreationActivity extends AppCompatActivity {
                     }
 
                     String event_id = group_id_txt + event_name_Txt.substring(0, 4);
-                    Event event = new Event(event_name_Txt, event_total_amount, event_individual, group_id_txt, event_id, selected_users);
+                    Event event = new Event(event_name_Txt, event_total_amount, event_individual, group_id_txt, event_id, "0", selected_users);
                     uploadEvent(event);
                 }
             }
