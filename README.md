@@ -15,3 +15,12 @@ college friends .
 
 ## Groups & Events Flow 
 <img src="https://github.com/lucifer0987/zh2hackathon_byte_crunchers/blob/main/Images/b.png"/>
+
+## Application Screenshots 
+<img src="https://github.com/lucifer0987/zh2hackathon_byte_crunchers/blob/main/Images/1.jpeg"/>
+<img src="https://github.com/lucifer0987/zh2hackathon_byte_crunchers/blob/main/Images/2.jpeg"/>
+<img src="https://github.com/lucifer0987/zh2hackathon_byte_crunchers/blob/main/Images/3.jpeg"/>
+<img src="https://github.com/lucifer0987/zh2hackathon_byte_crunchers/blob/main/Images/4.jpeg"/>
+<img src="https://github.com/lucifer0987/zh2hackathon_byte_crunchers/blob/main/Images/5.jpeg"/>
+<img src="https://github.com/lucifer0987/zh2hackathon_byte_crunchers/blob/main/Images/6.jpeg"/>
+<img src="https://github.com/lucifer0987/zh2hackathon_byte_crunchers/blob/main/Images/7.jpeg"/>
